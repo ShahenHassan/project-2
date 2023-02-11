@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.container {
+    display: grid;
+    grid-template-areas: "header header header" "navbarr navbarr navbarr" "content content aside" "footer footer footer";
+}
+
+div.container>div.header {
+    box-sizing: border-box;
+    background-color: #a37a22;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 40px;
+    text-transform: capitalize;
+    grid-area: header;
+    color: white;
+    line-height: 200px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+div.container>div.header>img {
+    float: left;
+    opacity: 0.9;
+}
+
+div.container>div.header>h2 {
+    float: right;
+    text-align: center;
+}
+
+div.container>div.header>p {
+    float: right;
+}
+
+div.navbarr {
+    grid-area: navbarr;
+    align-items: center;
+}
+
+div.navbarr>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #775306;
+}
+
+div.navbarr>ul>li {
+    float: left;
+}
+
+div.navbarr>ul>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.navbarr>ul>li a:hover {
+    background-color: #08661c;
+}
+
+div.content {
+    box-sizing: border-box;
+    background-color: #a37a22;
+    color: white;
+    font-size: 14px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    padding: 20px;
+    text-transform: capitalize;
+    grid-area: content;
+}
+
+div.container>div.content>h1 {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+div.container>div.content>p {
+    text-align: right;
+}
+
+div.container>div.aside {
+    box-sizing: border-box;
+    padding: 20px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #a37a22;
+    color: white;
+    grid-area: aside;
+}
+
+div.container>div.aside>h1 {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+div.container>div.aside>p {
+    text-align: right;
+}
+
+div.container>div#card-1 {
+    box-sizing: border-box;
+    background-color: rgb(171, 207, 7);
+    color: white;
+    font-size: 14px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    grid-area: c1;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+div.nursi-books article img {
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+div.nursi-books {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+
+div.nursi-books>.card {
+    padding: 0px 10px;
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: #664808;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    grid-area: footer;
+    height: 50px;
+    justify-content: center;
+    padding: 15px;
+}
